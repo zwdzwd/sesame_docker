@@ -1,7 +1,7 @@
 
 FROM r-base:3.6.1
 MAINTAINER Wanding Zhou (zhouwanding@gmail.com)
-RUN R -e "install.packages("BiocManager")"
+RUN R -e "install.packages('BiocManager')"
 RUN apt-get update
 RUN apt-get --assume-yes install libssl-dev libcurl4-openssl-dev libxml2-dev
 RUN R -e "BiocManager::install("sesame", update=FALSE, ask=FALSE)"
