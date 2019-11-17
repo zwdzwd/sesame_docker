@@ -1,0 +1,2 @@
+#!/bin/sh
+Rscript /repo/workhorse-master/scripts/R/workhorse.R --Rscript /usr/bin/R -i . -o output --loadMAN
